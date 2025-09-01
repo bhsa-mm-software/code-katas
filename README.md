@@ -1,39 +1,53 @@
-﻿Key Benefits of This SOLID Implementation
+# 🌟 Key Benefits of This SOLID Implementation
 
+---
 
-🎯 Single Responsibility Principle
+## 🎯 **Single Responsibility Principle (SRP)**
 
-Each class has one reason to change
-Game orchestrates, ScoreCalculator calculates, RollValidator validates
-Frame calculators each handle one specific frame type
+* Each class has **one clear reason to change**
+* **Game** orchestrates
+* **ScoreCalculator** calculates
+* **RollValidator** validates
+* Frame calculators handle **one specific frame type**
 
-🔓 Open/Closed Principle
+---
 
-Easy to add new frame types without modifying existing code
-New calculators implement IFrameCalculator
-Scoring system is extensible for game variants
+## 🔓 **Open/Closed Principle (OCP)**
 
-🔄 Liskov Substitution Principle
+* Easy to extend with **new frame types**
+* Add calculators by implementing **`IFrameCalculator`**
+* Scoring system is **adaptable for game variants**
 
-All frame calculators are interchangeable through their interface
-Any IScoreCalculator implementation can replace the default
+---
 
-📋 Interface Segregation Principle
+## 🔄 **Liskov Substitution Principle (LSP)**
 
-Focused interfaces for specific concerns
-No client depends on methods it doesn't use
-Clean separation of responsibilities
+* All frame calculators are **interchangeable via interface**
+* Any `IScoreCalculator` can **replace the default implementation**
 
-⚡ Dependency Inversion Principle
+---
 
-High-level modules depend on abstractions
-Easy to mock and test in isolation
-Configurable through dependency injection
+## 📋 **Interface Segregation Principle (ISP)**
 
-🏗️ Additional Patterns Applied
+* **Focused interfaces** for specific responsibilities
+* No client depends on **unused methods**
+* Ensures a **clean separation of concerns**
 
-Strategy Pattern: Frame calculators
-Factory Pattern: Service creation
-Repository Pattern: Game state management
-Command Pattern: Roll operations
+---
 
+## ⚡ **Dependency Inversion Principle (DIP)**
+
+* High-level modules depend on **abstractions, not details**
+* Easy to **mock and test** in isolation
+* Configurable via **dependency injection**
+
+---
+
+## 🏗️ **Additional Patterns Applied**
+
+* **Strategy Pattern** → Frame calculators
+* **Factory Pattern** → Service creation
+* **Repository Pattern** → Game state management
+* **Command Pattern** → Roll operations
+
+Would you like me to make this look **slide-ready (with more visual layout ideas like boxes, highlights, or color coding for each principle)**, or do you prefer it kept in a **text-only but polished format** for documentation?
